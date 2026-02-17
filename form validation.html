@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <style>
+        small{
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input id="name" type="text" placeholder="name" pattern="[a-z]{3,8}"><br>
+        <small>your name should be more then 2 character</small><br>
+        <input type="email" placeholder="email" required minlength="3" maxlength="10"><br><br>
+        <input type="password" placeholder="password"><br><br>
+        <select>
+            <option>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <textarea placeholder="about you...."></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="form_validation.js"></script>
+</body>
+
+</html>
