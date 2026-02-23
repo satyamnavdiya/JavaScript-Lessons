@@ -144,6 +144,13 @@ a.addEventListener(
   true,
 ); // on capture phase
 
+
+// phase 2 : child --> parent (most_inner-inner-outer)
+// true -- outer : phase 1 (true vali event run) : Parent --> child (outer(done)) Phase 2 (true vagar ni event run thai): child --> Parent (Most_inner --> inner)
+// true -- outer, inner : phase 1 (true vali event run): parent --> Child (outer(done)--> inner (done)) Phase 2 (true vagar ni event run thai): Child --> Parent (Most_inner)
+
+
+
 // use case : 
 // 1. security layer
 // 2. check when event  bubbling is fail
@@ -151,6 +158,8 @@ a.addEventListener(
 // event vs event lister
 // capture vs bubbling
 
+
+// dets.target.style.textDecoration = "line-through"
 
 
 // live character conter

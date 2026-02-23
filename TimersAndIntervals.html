@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timers And Intervals</title>
-</head>
-<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .glass-card {
+            width: auto;
+            padding: 20px;
+            border-radius: 16px;
+            background-color: #222;
+            text-align: center;
+        }
+
+        .progress-container {
+            margin: 10px 0;
+            height: 5px;
+            width: 100%;
+            background-color: #555;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .percent {
+            font-style: 16px;
+            font-weight: 500;
+            color: #d1d1d1;
+            letter-spacing: 0.5px;
+
+        }
     
+
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- donwload Progress -->
+    <div class="glass-card">
+        <h2>Downloading.......</h2>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="percent" id="percentText">0%</div>
+
+    </div>
+
+    <!-- Auto Banner Remove -->
+    
+
 
     <script src="TimersAndInterVals.js"></script>
 </body>
+
 </html>
