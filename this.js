@@ -89,12 +89,7 @@ let fnc = abcd.bind(obj2); // that create a new value of function with this keyw
 fnc(1, 2, 3);
 
 // use case of this keyword -- create a folder -- this keyword
-const userManager = {
-  users: [],
-  init: function(){},
-  addUser: function () {},
-  removeUser: function () {},
-};
+
 
 
 

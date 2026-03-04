@@ -122,3 +122,6 @@ toaster("This is a dummy notifications");
 setTimeout(() => {
   toaster("create a Toaster");
 }, 2000);
+
+
+// next topic : this keyword
